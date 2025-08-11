@@ -33,9 +33,10 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "'Mulish', sans-serif",
-    h1: { fontWeight: 800, fontSize: '3rem' },
-    h2: { fontWeight: 700, fontSize: '2.5rem' },
-    body1: { fontSize: '1rem', lineHeight: 1.6 },
+    h1: { fontWeight: 800, fontSize: '3.5rem' },
+    h2: { fontWeight: 700, fontSize: '2.75rem' },
+    body1: { fontSize: '1.5rem', lineHeight: 1.6, textAlign: 'justify' },
+    body2: { fontSize: '1rem', lineHeight: 1.6, textAlign: 'justify' },
   },
 });
 

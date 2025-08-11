@@ -43,29 +43,49 @@ export default function Section({ id, title, content, subcontent, image, shape, 
               display: 'flex',
               flexDirection: flexDir,
               alignItems: 'center',
-              gap: { xs: 6, md: 10 },
+              justifyContent: 'space-between',
+              gap: { xs: 4, md: 8 },
             }}
           >
             {/* Texto */}
             <Box
               sx={{
-                flex: { xs: '1 1 100%', md: '0 0 45%' },
+                flex: 1,
+                maxWidth: { md: '50%' },
                 color: 'white',
+                mt: reverse ? { md: 8 } : 0, // baja el texto si reverse
               }}
             >
               <Typography variant="h2" sx={{ color: 'white', mb: 2 }}>
                 {title}
               </Typography>
 
-              <Box sx={{ maxWidth: { md: '44rem' } }}>
-                <Typography variant="body1" sx={{ color: 'white', mb: subcontent ? 2 : 0 }}>
+              <Box sx={{ maxWidth: '44rem' }}>
+                <Typography
+                  variant="body1"
+                  sx={{ color: 'white', mb: subcontent ? 2 : 0 }}
+                >
                   {content}
                 </Typography>
 
                 {subcontent && (
-                  <Box component="ul" sx={{ pl: 3, m: 0, color: 'white' }}>
+                  <Box
+                    component="ul"
+                    sx={{
+                      pl: 3,
+                      m: 0,
+                      color: 'white',
+                      listStyleType: 'disc',
+                    }}
+                  >
                     {subcontent.map((it, i) => (
-                      <li key={i}>{it}</li>
+                      <Typography
+                        key={i}
+                        variant="body2"
+                        sx={{ color: 'white', mb: subcontent ? 2 : 0 }}
+                      >
+                        <li >{it}</li>
+                      </Typography>
                     ))}
                   </Box>
                 )}
@@ -75,15 +95,17 @@ export default function Section({ id, title, content, subcontent, image, shape, 
             {/* Imagen */}
             <Box
               sx={{
-                flex: { xs: '1 1 100%', md: '0 0 55%' },
+                flex: 1,
+                maxWidth: { md: '50%' },
                 display: 'flex',
-                justifyContent: imageJustify,
-                minWidth: { xs: '100%', md: 0 },
+                justifyContent: { xs: 'center', md: imageJustify },
+                mt: reverse ? 0 : { md: 8 }, // baja la imagen si NO es reverse
               }}
             >
               <ImageSection image={image} title={title} />
             </Box>
           </Box>
+
         </motion.div>
       </Container>
     </Box>
