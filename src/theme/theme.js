@@ -28,6 +28,8 @@ const theme = createTheme({
   custom: {
     gradientMain:
       'linear-gradient(90deg, #F6D047 0%, #F7931E 30%, #EC008C 65%, #662D91 100%)',
+    gradientMainOpacity:
+      'linear-gradient(90deg, #f6d04773 0%, #f7921e73 30%, #EC008C73 65%, #662D9173 100%)',
   },
   typography: {
     fontFamily: "'Mulish', sans-serif",
