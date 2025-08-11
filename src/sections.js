@@ -1,0 +1,81 @@
+import sampleImage from './assets/sample.jpg';
+
+export const sections = [
+    {
+        id: 'quienes-somos',
+        title: '¿QUIÉNES SOMOS?',
+        content: '365 Producciones, es una agencia integral de desarrollo musical con base en Córdoba y proyección nacional. Nos dedicamos a potenciar artistas a través de una red multidisciplinaria de servicios profesionales que abordan todos los aspectos de la carrera musical. Asegurando el crecimiento tanto artístico, técnico y comercial de cada proyecto.',
+        image: sampleImage,
+        shape: 'shape-oval',
+    },
+    {
+        id: 'que-hacemos',
+        title: '¿QUÉ HACEMOS?',
+        content: 'Ofrecemos un ecosistema 360° de soluciones para artistas, incluyendo:',
+        subcontent: [
+            'Booking y venta de shows: gestión activa de fechas, festivales y eventos.',
+            'Management de carrera: planificación estratégica, posicionamiento y asesoría continua.',
+            'Apoyo técnico en vivo: sonido, iluminación, stages y producción de shows.',
+            'Producción discográfica: dos álbumes por año (estudio y vivo) y 4 sencillos.',
+            'Editorial musical: gestión de registro, administracion editorial y busqueda de sincronizaciones.',
+            'Marketing digital: estrategia de crecimiento en redes sociales y plataformas de música digital.',
+            'Prensa y difusión: visibilidad en medios, EPKs, notas y campañas.',
+            'Asesoramiento legal y contable: contratos, impuestos y más.',
+        ],
+        image: sampleImage,
+        shape: 'shape-oval',
+    },
+    {
+        id: 'mision',
+        title: 'MISIÓN',
+        content: 'Impulsar y profesionalizar proyectos musicales, brindando herramientas concretas, estructura de trabajo y visión estratégica para que cada artista pueda vivir de su arte con autonomía, proyección y sostenibilidad.',
+        image: sampleImage,
+        shape: 'shape-oval',
+    },
+    {
+        id: 'vision',
+        title: 'VISIÓN',
+        content: 'Convertirnos en una referencia regional y nacional como agencia de desarrollo artístico, promoviendo una industria musical más profesional, transparente y colaborativa, donde el talento y el trabajo encuentren un camino de crecimiento genuino.',
+        image: sampleImage,
+        shape: 'shape-oval',
+    },
+    {
+        id: 'artistas',
+        title: 'NUESTROS ARTISTAS',
+        content: 'Algo para artistas diferente.',
+        image: sampleImage,
+        shape: 'shape-oval',
+    },
+    {
+        id: 'valores',
+        title: 'VALORES',
+        content: '',
+        subcontent: [
+            'Compromiso real con el desarrollo de los artistas.',
+            'Excelencia profesional en cada servicio ofrecido.',
+            'Integridad en el manejo legal, financiero y artístico.',
+            'Colaboración como forma de crecimiento colectivo.',
+            'Creatividad estratégica, fusionando arte y visión empresarial.',
+        ],
+        image: sampleImage,
+        shape: 'shape-oval',
+    },
+    {
+        id: 'porque',
+        title: '¿POR QUÉ ELEGIRNOS?',
+        content: 'Porque entendemos que el talento necesita estructura, estrategia y un entorno de trabajo que permita a los artistas concentrarse en lo que hacen mejor: crear, EMOCIONAR y conectar. 365 Producciones es mucho más que una agencia de booking y management. Somos una comunidad creativa y profesional, que transforma proyectos en realidades, canciones en caminos y escenarios en hogares artísticos.',
+        image: sampleImage,
+        shape: 'shape-oval',
+    },
+    {
+        id: 'contacto',
+        title: 'CONTACTO',
+        content: '',
+        subcontent: [
+            'Córdoba - Argentina.',
+            'Email: contacto@365producciones.com.ar.',
+        ],
+        image: sampleImage,
+        shape: 'shape-oval',
+    },
+]
