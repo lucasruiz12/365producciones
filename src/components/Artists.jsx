@@ -218,7 +218,7 @@ export default function Artists() {
                                     color="success"
                                     startIcon={<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20" />}
                                     onClick={() => {
-                                        const message = `Hola, quisiera más información para contratar a ${selectedArtist.name}`;
+                                        const message = `Hola, quisiera más información para contratar a *${selectedArtist.name}*`;
                                         const url = `https://wa.me/5493875040133?text=${encodeURIComponent(message)}`;
                                         window.open(url, '_blank');
                                     }}
