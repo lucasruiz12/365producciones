@@ -3,8 +3,9 @@ import { Box, Container, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 import ImageSection from './ImageSection';
+import Artists from './Artists';
 
-export default function Section({ id, title, content, subcontent, image, shape, reverse }) {
+export default function Section({ id, title, content, subcontent, image, reverse, withImg, artists }) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
@@ -22,6 +23,12 @@ export default function Section({ id, title, content, subcontent, image, shape, 
 
   const flexDir = { xs: 'column', md: reverse ? 'row-reverse' : 'row' };
   const imageJustify = { xs: 'center', md: reverse ? 'flex-start' : 'flex-end' };
+
+  if (artists) {
+    return (
+      <Artists />
+    );
+  };
 
   return (
     <Box

@@ -7,6 +7,7 @@ export const sections = [
         content: '365 Producciones, es una agencia integral de desarrollo musical con base en Córdoba y proyección nacional. Nos dedicamos a potenciar artistas a través de una red multidisciplinaria de servicios profesionales que abordan todos los aspectos de la carrera musical. Asegurando el crecimiento tanto artístico, técnico y comercial de cada proyecto.',
         image: sampleImage,
         shape: 'shape-oval',
+        artists: false,
     },
     {
         id: 'que-hacemos',
@@ -24,6 +25,7 @@ export const sections = [
         ],
         image: sampleImage,
         shape: 'shape-oval',
+        artists: false,
     },
     {
         id: 'mision',
@@ -31,6 +33,7 @@ export const sections = [
         content: 'Impulsar y profesionalizar proyectos musicales, brindando herramientas concretas, estructura de trabajo y visión estratégica para que cada artista pueda vivir de su arte con autonomía, proyección y sostenibilidad.',
         image: sampleImage,
         shape: 'shape-oval',
+        artists: false,
     },
     {
         id: 'vision',
@@ -38,6 +41,7 @@ export const sections = [
         content: 'Convertirnos en una referencia regional y nacional como agencia de desarrollo artístico, promoviendo una industria musical más profesional, transparente y colaborativa, donde el talento y el trabajo encuentren un camino de crecimiento genuino.',
         image: sampleImage,
         shape: 'shape-oval',
+        artists: false,
     },
     {
         id: 'artistas',
@@ -45,6 +49,7 @@ export const sections = [
         content: 'Algo para artistas diferente.',
         image: sampleImage,
         shape: 'shape-oval',
+        artists: true,
     },
     {
         id: 'valores',
@@ -59,6 +64,7 @@ export const sections = [
         ],
         image: sampleImage,
         shape: 'shape-oval',
+        artists: false,
     },
     {
         id: 'porque',
@@ -66,6 +72,7 @@ export const sections = [
         content: 'Porque entendemos que el talento necesita estructura, estrategia y un entorno de trabajo que permita a los artistas concentrarse en lo que hacen mejor: crear, EMOCIONAR y conectar. 365 Producciones es mucho más que una agencia de booking y management. Somos una comunidad creativa y profesional, que transforma proyectos en realidades, canciones en caminos y escenarios en hogares artísticos.',
         image: sampleImage,
         shape: 'shape-oval',
+        artists: false,
     },
     {
         id: 'contacto',
@@ -77,5 +84,6 @@ export const sections = [
         ],
         image: sampleImage,
         shape: 'shape-oval',
+        artists: false,
     },
 ]
